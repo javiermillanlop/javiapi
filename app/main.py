@@ -13,4 +13,4 @@ def webhook():
         #return "Webhook received!"
         return request.json
     if request.method == 'GET':
-        return "service up!"
+        return "service up test!"
