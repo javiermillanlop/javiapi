@@ -10,6 +10,7 @@ def index():
 def webhook():
     if request.method == 'POST':
         print("Data received from Webhook is: ", request.json)
-        return "Webhook received!"
+        #return "Webhook received!"
+        return request.json
     if request.method == 'GET':
         return "service up!"
